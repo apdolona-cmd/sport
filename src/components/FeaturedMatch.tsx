@@ -87,7 +87,7 @@ export default function FeaturedMatch({ match, getArabicName }: FeaturedMatchPro
   };
 
   return (
-    <div className="rounded-2xl overflow-hidden bg-gradient-to-br from-[#0d1b2a] via-[#1b2838] to-[#0d1b2a] border border-green-500/20 shadow-2xl shadow-green-500/10">
+    <div className="rounded-2xl overflow-hidden bg-[#0d1b2a] border border-green-500/20">
       {/* Match Header */}
       <div className="relative bg-gradient-to-br from-green-900/90 via-green-800/70 to-green-900/90 p-5 md:p-8">
         <svg className="absolute inset-0 w-full h-full opacity-15" viewBox="0 0 1000 500" preserveAspectRatio="none">
@@ -112,7 +112,7 @@ export default function FeaturedMatch({ match, getArabicName }: FeaturedMatchPro
             <span className="text-white text-sm md:text-lg font-black text-center" style={{ fontFamily: 'Cairo' }}>{getArabicName(match.homeTeam)}</span>
           </div>
           <div className="flex flex-col items-center gap-1.5 shrink-0">
-            {isLive && <div className="bg-red-600 text-white text-[9px] font-black px-2.5 py-0.5 rounded-full animate-pulse shadow-lg shadow-red-500/50">🔴 {match.clock}</div>}
+            {isLive && <div className="bg-red-600 text-white text-[9px] font-black px-2.5 py-0.5 rounded-full">🔴 {match.clock}</div>}
             <div className="bg-black/40 backdrop-blur rounded-2xl px-5 py-3 border border-white/20">
               <div className="flex items-center gap-3">
                 <span className="text-4xl md:text-6xl font-black text-white" style={{ fontFamily: 'Orbitron' }}>{match.homeScore}</span>
@@ -145,7 +145,7 @@ export default function FeaturedMatch({ match, getArabicName }: FeaturedMatchPro
               <button key={ch.name} onClick={() => safeOpen(ch.url)}
                 className={`w-full flex items-center gap-3 bg-gradient-to-r ${ch.color} border rounded-xl p-3.5 transition-all hover:scale-[1.01] hover:shadow-lg group relative cursor-pointer text-right`}>
                 {ch.hot && (
-                  <span className="absolute -top-1.5 -left-1.5 bg-red-500 text-white text-[8px] font-black px-1.5 py-0.5 rounded-full animate-pulse shadow-lg shadow-red-500/50">
+                  <span className="absolute -top-1.5 -left-1.5 bg-red-500 text-white text-[8px] font-black px-1.5 py-0.5 rounded-full">
                     LIVE
                   </span>
                 )}

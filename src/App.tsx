@@ -260,7 +260,7 @@ export default function App() {
       <div className="bg-[#0a0a2e] border-b border-white/5 py-1.5">
         <div className="container mx-auto px-4 flex items-center justify-between text-[10px] text-white/40">
           <div className="flex items-center gap-2">
-            <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
+            <div className="w-2 h-2 bg-green-500 rounded-full" />
             <span style={{ fontFamily: 'Cairo, sans-serif' }}>تحديث تلقائي كل 30 ثانية</span>
           </div>
           <div className="flex items-center gap-3">
@@ -372,8 +372,8 @@ export default function App() {
                 🎬 العرباوية ماتش
               </h2>
               <div className="flex items-center gap-1.5 text-[10px] text-white/40">
-                <span className="w-2 h-2 bg-red-500 rounded-full animate-pulse" />
-                <span>بيانات ESPN الحية</span>
+                <span className="w-2 h-2 bg-red-500 rounded-full" />
+                <span>ESPN مباشر</span>
               </div>
             </div>
 
@@ -398,7 +398,7 @@ export default function App() {
                     {match.homeScore}-{match.awayScore}
                   </span>
                   <img src={match.awayLogo} alt="" className="w-5 h-5" crossOrigin="anonymous" />
-                  {match.status === 'live' && <span className="w-1.5 h-1.5 bg-red-500 rounded-full animate-pulse" />}
+                  {match.status === 'live' && <span className="w-1.5 h-1.5 bg-red-500 rounded-full" />}
                 </button>
               ))}
             </div>

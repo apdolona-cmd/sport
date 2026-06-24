@@ -39,7 +39,7 @@ export default function StatsBar({ liveCount, totalCount, upcomingCount, activeF
               <p className="text-[10px] text-white/50 font-semibold" style={{ fontFamily: 'Cairo, sans-serif' }}>{stat.label}</p>
             </div>
             {stat.id === 'live' && liveCount > 0 && (
-              <span className="w-2 h-2 bg-red-500 rounded-full animate-pulse mr-auto" />
+              <span className="w-2 h-2 bg-red-500 rounded-full mr-auto" />
             )}
           </button>
         );
